@@ -1,0 +1,163 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #F9F9F9;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 40px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#logo {
+  font-size: 40px;
+}
+
+.links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.links li {
+  display: inline-block;
+  margin: 0 12px;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+}
+
+/* intro - left (text) */
+.intro .self-intro {
+  flex: 1;
+}
+
+.intro .self-intro h2 {
+  font-weight: normal;
+  font-size: 32px;
+  color: #1E2022;
+}
+
+.intro .self-intro p {
+  font-size: 22px;
+  color: #3A3C3F;
+  line-height: 32px;
+}
+
+/* intro - right (image) */
+.intro .graphic {
+  flex: 1;
+}
+
+.intro .graphic img {
+  display: block;
+  width: 100%;
+}
+
+.block {
+  margin: 120px 0;
+}
+
+.block h3 {
+  text-align: center;
+  font-size: 32px;
+  color: #2B3763;
+}
+
+.block .features {
+  display: flex;
+}
+
+.block .features .feature {
+  padding: 24px;
+  background-color: #fff;
+  margin: 12px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 16px #eee;
+  flex: 1;
+}
+
+.block .features .feature.image {
+  padding: 0;
+  box-shadow: none;
+  background-color: transparent;
+  text-align: center;
+}
+
+.block .features .feature.image img {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.block .features .feature h4 {
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.block .features .feature h4 svg {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  margin-right: 12px;
+}
+
+.block .features .feature p {
+  font-size: 18px;
+  color: #585858;
+  line-height: 26px;
+}
+
+footer {
+  text-align: center;
+  color: #636363;
+}
+
+footer .button {
+  background-color: #262626;
+  color: #fff;
+  display: inline-block;
+  padding: 22px 50px;
+  font-size: 26px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 0px 8px 16px #ccc;
+}
+
+footer p {
+  margin-top: 40px;
+}
+
+@media (max-width: 767px) {
+  .intro {
+    flex-direction: column;
+  }
+
+  .intro .graphic {
+    display: none;
+  }
+
+  .block {
+    margin: 40px 0;
+  }
+
+  .block .features {
+    flex-direction: column;
+  }
+
+  .block .features .feature {
+    margin: 20px 0;
+  }
+}
